@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physiotherapy Islamabad | Premium Home-Service Physiotherapy by Dr. Usman</title>
+<meta name="description" content="Premium home-service physiotherapy in Islamabad & Rawalpindi. One-on-one rehabilitation led by Dr. Usman — back pain, cervical, knee, post-surgery, neuro & paediatric care, delivered at your door. Book on WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Physiotherapy Islamabad",
+  "description": "Premium home-service physiotherapy in Islamabad and Rawalpindi, led by Dr. Usman.",
+  "areaServed": ["Islamabad", "Rawalpindi"],
+  "telephone": "+923015802621",
+  "medicalSpecialty": "Physiotherapy",
+  "priceRange": "$$"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Do you provide physiotherapy at home anywhere in Islamabad?","acceptedAnswer":{"@type":"Answer","text":"Yes — we cover Islamabad and Rawalpindi. Share your area on the booking form and we'll confirm availability over WhatsApp."}},
+    {"@type":"Question","name":"Do I need any special equipment at home?","acceptedAnswer":{"@type":"Answer","text":"No. Dr. Usman brings all necessary assessment and treatment equipment. You just need a comfortable, well-lit space to work in."}},
+    {"@type":"Question","name":"What conditions do you treat?","acceptedAnswer":{"@type":"Answer","text":"Back and neck pain, post-surgery rehabilitation, sports injuries, knee and joint issues, and neurological or paediatric conditions, including cerebral palsy."}},
+    {"@type":"Question","name":"How do I book a session?","acceptedAnswer":{"@type":"Answer","text":"Fill in the booking form with your location and pain point, or message us directly on WhatsApp."}}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#FFFFFF;
+  --bg-alt:#EAF4FC;
+  --bg-alt-2:#F5FAFD;
+  --accent:#2E7DD6;
+  --accent-dark:#1D5FA8;
+  --accent-soft:#DCEBFA;
+  --navy:#0F2A43;
+  --navy-soft:#173A5C;
+  --text:#16324A;
+  --muted:#5C7893;
+  --line:#D7E7F5;
+  --r-lg:2.5rem;
+  --r-md:1.5rem;
+  --r-sm:1rem;
+  --ease-magnetic:cubic-bezier(0.25,0.46,0.45,0.94);
+  --ease-spring:cubic-bezier(0.34,1.56,0.64,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+.serif-italic{font-family:'Fraunces',serif;font-style:italic;font-weight:500;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.75rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--accent-dark);
+  display:inline-flex;align-items:center;gap:.5rem;
+}
+.eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block;}
+.wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem;}
+section{position:relative;}
+
+/* noise overlay */
+.noise{
+  position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9999;opacity:.045;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* buttons */
+.btn{
+  position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.9rem 1.9rem;border-radius:999px;font-weight:600;font-size:.95rem;
+  border:none;cursor:pointer;transition:transform .4s var(--ease-magnetic);
+  white-space:nowrap;
+}
+.btn:hover{transform:scale(1.03);}
+.btn span.slide{
+  position:absolute;inset:0;transform:translateY(101%);transition:transform .45s var(--ease-magnetic);z-index:0;
+}
+.btn:hover span.slide{transform:translateY(0);}
+.btn .label{position:relative;z-index:1;display:flex;align-items:center;gap:.5rem;}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-primary span.slide{background:var(--accent-dark);}
+.btn-ghost{background:var(--bg-alt);color:var(--navy);}
+.btn-ghost span.slide{background:var(--accent-soft);}
+.btn-dark{background:var(--navy);color:#fff;}
+.btn-dark span.slide{background:var(--accent-dark);}
+
+.link-lift{display:inline-block;transition:transform .3s var(--ease-magnetic),color .3s ease;}
+.link-lift:hover{transform:translateY(-1px);color:var(--accent-dark);}
+
+/* navbar */
+.navbar{
+  position:fixed;top:1.1rem;left:50%;transform:translateX(-50%);z-index:1000;
+  width:min(1080px,92vw);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.7rem .9rem .7rem 1.4rem;
+  border-radius:999px;
+  background:transparent;
+  border:1px solid transparent;
+  transition:background .4s ease,border-color .4s ease,box-shadow .4s ease,backdrop-filter .4s ease;
+}
+.navbar.scrolled{
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-color:var(--line);
+  box-shadow:0 10px 30px -12px rgba(15,42,67,.15);
+}
+.nav-logo{font-weight:800;font-size:1.02rem;letter-spacing:-.02em;color:var(--navy);}
+.nav-logo span{color:var(--accent);}
+.nav-links{display:flex;align-items:center;gap:1.9rem;}
+.nav-links a{font-size:.88rem;font-weight:500;color:var(--navy-soft);}
+.nav-cta{display:flex;align-items:center;gap:.6rem;}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;border-radius:2px;}
+
+/* hero */
+.hero{
+  min-height:100dvh;display:flex;align-items:flex-end;position:relative;
+  border-radius:0 0 var(--r-lg) var(--r-lg);overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;background-size:cover;background-position:center 30%;
+}
+.hero-bg::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(15,42,67,.35) 0%,rgba(15,42,67,.55) 55%,rgba(9,26,42,.92) 100%);
+}
+.hero-inner{position:relative;z-index:2;padding:7rem 1.5rem 4.5rem;width:100%;}
+.hero-content{max-width:680px;}
+.hero h1{
+  font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.02em;color:#fff;font-weight:700;
+}
+.hero h1 .line2{display:block;font-size:clamp(3rem,7.5vw,5.6rem);font-weight:500;}
+.hero p.sub{color:rgba(255,255,255,.82);font-size:1.05rem;max-width:480px;margin-top:1.4rem;line-height:1.6;}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem;}
+.hero-eyebrow{color:rgba(255,255,255,.85);}
+.hero-eyebrow::before{background:#7FC4FF;}
+
+/* trust strip */
+.trust{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;margin-top:-3.5rem;position:relative;z-index:3;
+}
+.trust-item{background:#fff;padding:1.4rem 1.6rem;display:flex;align-items:center;gap:.8rem;}
+.trust-item svg{flex-shrink:0;color:var(--accent);}
+.trust-item p{font-size:.86rem;color:var(--navy-soft);font-weight:500;line-height:1.35;}
+
+/* section headers */
+.section-head{max-width:640px;margin-bottom:3rem;}
+.section-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);letter-spacing:-.02em;margin-top:.7rem;color:var(--navy);font-weight:700;}
+.section-head h2 em{color:var(--accent);}
+.section-pad{padding:6.5rem 0;}
+.bg-alt{background:var(--bg-alt-2);}
+
+/* features */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.feature-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:2rem;
+  display:flex;flex-direction:column;min-height:360px;
+}
+.feature-card h3{font-size:1.2rem;margin-top:1.2rem;color:var(--navy);}
+.feature-card p{font-size:.9rem;color:var(--muted);margin-top:.6rem;line-height:1.55;flex-grow:0;}
+.icon-badge{width:46px;height:46px;border-radius:1rem;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent-dark);}
+
+.shuffler{position:relative;height:120px;margin-top:1.4rem;border-radius:var(--r-sm);background:var(--bg-alt-2);overflow:hidden;border:1px solid var(--line);}
+.shuffler-item{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-weight:600;color:var(--navy);font-size:1rem;opacity:0;transform:translateY(16px) scale(.96);
+  transition:opacity .5s var(--ease-spring),transform .5s var(--ease-spring);
+}
+.shuffler-item.active{opacity:1;transform:translateY(0) scale(1);}
+
+.typewriter-box{
+  margin-top:1.4rem;height:120px;border-radius:var(--r-sm);background:var(--navy);
+  display:flex;align-items:center;padding:1.2rem;border:1px solid var(--line);
+}
+.typewriter-box p{color:#BFE0FF;font-size:.85rem;letter-spacing:.01em;}
+.typewriter-box .cursor{display:inline-block;width:7px;height:1em;background:#7FC4FF;margin-left:2px;vertical-align:middle;animation:blink 1s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+
+.scheduler{margin-top:1.4rem;height:120px;border-radius:var(--r-sm);background:var(--bg-alt-2);border:1px solid var(--line);padding:.7rem;position:relative;}
+.sched-grid{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(3,1fr);gap:4px;height:100%;}
+.sched-cell{background:#fff;border-radius:5px;border:1px solid var(--line);}
+.sched-cell.hit{background:var(--accent-soft);border-color:var(--accent);}
+.sched-cursor{
+  position:absolute;width:14px;height:14px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 4px rgba(46,125,214,.25);transition:top .8s var(--ease-magnetic),left .8s var(--ease-magnetic);
+}
+
+/* doctor section */
+.doctor-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;}
+.doctor-photo{position:relative;}
+.doctor-photo img{width:100%;height:560px;object-fit:cover;border-radius:var(--r-lg);}
+.doctor-photo .badge{
+  position:absolute;bottom:-1.5rem;left:-1.5rem;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r-md);padding:1.2rem 1.5rem;box-shadow:0 20px 40px -20px rgba(15,42,67,.25);
+  display:flex;align-items:center;gap:.8rem;
+}
+.doctor-copy h2{font-size:clamp(1.9rem,3.4vw,2.5rem);color:var(--navy);letter-spacing:-.02em;margin:.8rem 0 1.2rem;}
+.doctor-copy p{color:var(--muted);line-height:1.7;font-size:1rem;margin-bottom:1rem;}
+.doctor-points{list-style:none;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;}
+.doctor-points li{display:flex;align-items:flex-start;gap:.7rem;font-size:.92rem;color:var(--navy-soft);}
+.doctor-points svg{flex-shrink:0;color:var(--accent);margin-top:2px;}
+
+/* gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;}
+.gallery-item{position:relative;border-radius:var(--r-md);overflow:hidden;height:340px;}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease-magnetic);}
+.gallery-item:hover img{transform:scale(1.06);}
+.gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(15,42,67,.85) 100%);}
+.gallery-cap{position:absolute;left:1.1rem;bottom:1.1rem;right:1.1rem;color:#fff;font-size:.85rem;font-weight:600;z-index:2;}
+.gallery-item:nth-child(2){height:400px;margin-top:-60px;}
+.gallery-item:nth-child(4){height:400px;margin-top:-60px;}
+
+/* philosophy */
+.philosophy{
+  background:var(--navy);color:#fff;border-radius:var(--r-lg);
+  padding:6rem 3rem;text-align:center;
+}
+.philosophy .line{font-size:clamp(1.1rem,2vw,1.4rem);color:rgba(255,255,255,.5);margin-bottom:.5rem;}
+.philosophy .line em{color:rgba(255,255,255,.6);font-style:italic;}
+.philosophy .drama{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:clamp(2.1rem,4.8vw,3.6rem);line-height:1.15;margin-top:1.6rem;}
+.philosophy .drama .accent{color:#7FC4FF;}
+.word{display:inline-block;opacity:0;transform:translateY(14px);}
+
+/* protocol */
+.protocol-step{
+  min-height:100vh;display:flex;align-items:center;
+  border-radius:var(--r-lg);
+}
+.protocol-inner{
+  width:100%;padding:4rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;
+  border-radius:var(--r-lg);min-height:70vh;
+}
+.protocol-num{font-family:'IBM Plex Mono',monospace;font-size:.85rem;color:var(--accent);}
+.protocol-inner h3{font-size:clamp(1.8rem,3.2vw,2.6rem);color:var(--navy);margin:1rem 0 1rem;letter-spacing:-.02em;}
+.protocol-inner p{color:var(--muted);font-size:1.02rem;line-height:1.65;max-width:420px;}
+.protocol-visual{
+  height:380px;border-radius:var(--r-md);background:var(--bg-alt-2);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
+}
+/* rotating geometric motif */
+.motif-rotate{width:140px;height:140px;position:relative;}
+.motif-rotate span{
+  position:absolute;inset:0;border:2px solid var(--accent);border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation:spin 12s linear infinite;
+}
+.motif-rotate span:nth-child(2){border-color:var(--navy);opacity:.4;animation-duration:18s;animation-direction:reverse;}
+@keyframes spin{to{transform:rotate(360deg);}}
+/* scanning laser */
+.dot-grid{
+  width:100%;height:100%;position:relative;
+  background-image:radial-gradient(var(--line) 1.5px,transparent 1.5px);background-size:22px 22px;
+}
+.laser{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);animation:scan 2.8s ease-in-out infinite;}
+@keyframes scan{0%{top:8%;}50%{top:92%;}100%{top:8%;}}
+/* waveform */
+.waveform{display:flex;align-items:center;gap:5px;}
+.waveform span{width:5px;background:var(--accent);border-radius:3px;animation:pulse 1.1s ease-in-out infinite;}
+@keyframes pulse{0%,100%{height:14px;}50%{height:64px;}}
+
+/* inclusions */
+.inclusions{
+  background:var(--bg-alt);border-radius:var(--r-lg);padding:5rem 3rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;
+}
+.inclusions ul{list-style:none;display:flex;flex-direction:column;gap:1rem;margin-top:1.6rem;}
+.inclusions li{display:flex;align-items:flex-start;gap:.8rem;font-size:.98rem;color:var(--navy-soft);}
+.inclusions li svg{color:var(--accent);flex-shrink:0;margin-top:2px;}
+.inclusions-cta{background:#fff;border-radius:var(--r-md);padding:2.5rem;border:1px solid var(--line);text-align:center;}
+.inclusions-cta h3{font-size:1.4rem;color:var(--navy);margin-bottom:.6rem;}
+.inclusions-cta p{color:var(--muted);font-size:.9rem;margin-bottom:1.6rem;}
+
+/* booking */
+.booking-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;}
+.booking-info h2{font-size:clamp(1.9rem,3.4vw,2.5rem);color:var(--navy);letter-spacing:-.02em;margin:.8rem 0 1.2rem;}
+.booking-info p{color:var(--muted);line-height:1.7;margin-bottom:1.8rem;}
+.info-row{display:flex;align-items:center;gap:.9rem;margin-bottom:1.1rem;}
+.info-row .ico{width:42px;height:42px;border-radius:.9rem;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent-dark);flex-shrink:0;}
+.info-row .t{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+.info-row .v{font-weight:600;color:var(--navy);}
+
+.booking-form{
+  background:var(--navy);border-radius:var(--r-lg);padding:2.6rem;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.field{display:flex;flex-direction:column;gap:.5rem;}
+.field.full{grid-column:1/-1;}
+.field label{font-size:.78rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.05em;}
+.field input,.field select,.field textarea{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-sm);
+  padding:.85rem 1rem;color:#fff;font-family:inherit;font-size:.92rem;outline:none;
+  transition:border-color .3s ease,background .3s ease;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);background:rgba(255,255,255,.1);}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.35);}
+.field select option{color:#111;}
+.field textarea{resize:vertical;min-height:90px;}
+.form-note{font-size:.8rem;color:rgba(255,255,255,.45);margin-top:1rem;}
+
+/* faq */
+.faq-list{display:flex;flex-direction:column;gap:.9rem;max-width:780px;}
+.faq-item{border:1px solid var(--line);border-radius:var(--r-md);padding:1.4rem 1.6rem;background:#fff;cursor:pointer;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:1rem;font-weight:600;color:var(--navy);font-size:1rem;}
+.faq-q svg{transition:transform .35s var(--ease-magnetic);flex-shrink:0;color:var(--accent);}
+.faq-item.open .faq-q svg{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,margin-top .4s ease;color:var(--muted);font-size:.92rem;line-height:1.6;}
+.faq-item.open .faq-a{max-height:200px;margin-top:.9rem;}
+
+/* footer */
+footer{background:var(--navy);border-radius:var(--r-lg) var(--r-lg) 0 0;padding:5rem 0 2rem;color:#fff;margin-top:2rem;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.12);}
+.footer-brand h3{font-size:1.3rem;font-weight:800;}
+.footer-brand p{color:rgba(255,255,255,.55);font-size:.9rem;margin-top:.8rem;max-width:280px;line-height:1.6;}
+.status-pill{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:.5rem 1rem;margin-top:1.4rem;font-size:.8rem;}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#4ADE80;box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:pulseDot 1.8s infinite;}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(74,222,128,.6);}70%{box-shadow:0 0 0 8px rgba(74,222,128,0);}100%{box-shadow:0 0 0 0 rgba(74,222,128,0);}}
+.footer-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.45);margin-bottom:1.1rem;}
+.footer-col a{display:block;color:rgba(255,255,255,.75);font-size:.92rem;margin-bottom:.75rem;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.6rem;font-size:.8rem;color:rgba(255,255,255,.4);flex-wrap:wrap;gap:1rem;}
+
+/* whatsapp float */
+.wa-float{
+  position:fixed;bottom:1.8rem;right:1.8rem;z-index:900;width:60px;height:60px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);
+  transition:transform .35s var(--ease-magnetic);
+}
+.wa-float:hover{transform:scale(1.08);}
+.wa-float::before{
+  content:'';position:absolute;inset:0;border-radius:50%;background:#25D366;opacity:.5;
+  animation:waPulse 2.2s ease-out infinite;
+}
+@keyframes waPulse{0%{transform:scale(1);opacity:.5;}100%{transform:scale(1.9);opacity:0;}}
+
+/* reveal helper */
+.reveal{opacity:0;transform:translateY(24px);}
+
+@media (max-width:980px){
+  .nav-links{display:none;}
+  .hamburger{display:block;}
+  .trust{grid-template-columns:1fr;}
+  .features-grid{grid-template-columns:1fr;}
+  .doctor-grid{grid-template-columns:1fr;}
+  .doctor-photo img{height:400px;}
+  .doctor-photo .badge{left:1rem;bottom:-1rem;}
+  .gallery-grid{grid-template-columns:1fr 1fr;}
+  .gallery-item:nth-child(2),.gallery-item:nth-child(4){margin-top:0;}
+  .protocol-inner{grid-template-columns:1fr;padding:2.5rem 1.6rem;}
+  .protocol-visual{height:260px;order:-1;}
+  .inclusions{grid-template-columns:1fr;padding:2.6rem 1.6rem;}
+  .booking-wrap{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:2rem;}
+  .philosophy{padding:3.5rem 1.6rem;}
+  .hero-inner{padding:6rem 1.2rem 3rem;}
+  .hero h1{font-size:clamp(2.1rem,8.5vw,4.6rem);line-height:1.05;}
+  .hero h1 .line2{font-size:clamp(2.4rem,10vw,5.6rem);}
+  .hero p.sub{margin-top:.9rem;font-size:.92rem;}
+  .hero-ctas{margin-top:1.4rem;gap:.7rem;}
+  .hero-ctas .btn{padding:.8rem 1.5rem;font-size:.88rem;}
+  .hero-eyebrow{font-size:.68rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">Physiotherapy <span>Islamabad</span></div>
+  <div class="nav-links">
+    <a class="link-lift" href="#services">Services</a>
+    <a class="link-lift" href="#doctor">Dr. Usman</a>
+    <a class="link-lift" href="#how-it-works">How It Works</a>
+    <a class="link-lift" href="#faq">FAQ</a>
+  </div>
+  <div class="nav-cta">
+    <a href="#booking" class="btn btn-primary" style="padding:.7rem 1.4rem;font-size:.85rem;">
+      <span class="slide"></span><span class="label">Book Now</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg" style="background-image:url('https://fracktechnologies.com/wp-content/uploads/2026/07/Dr.Usman-assesing-back-pain-patient.png');"></div>
+  <div class="hero-inner wrap">
+    <div class="hero-content">
+      <span class="eyebrow hero-eyebrow" data-hero>Home Physiotherapy · Islamabad</span>
+      <h1 data-hero>
+        <span class="line1">Physiotherapy that comes to</span>
+        <span class="line2 serif-italic">you.</span>
+      </h1>
+      <p class="sub" data-hero>Rehabilitation at home, led personally by Dr. Usman.</p>
+      <div class="hero-ctas" data-hero>
+        <a href="#booking" class="btn btn-primary">
+          <span class="slide"></span><span class="label">Book a Home Visit</span>
+        </a>
+        <a href="https://wa.me/923015802621?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20home%20physiotherapy%20sessions." target="_blank" rel="noopener" class="btn btn-ghost">
+          <span class="slide"></span><span class="label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.44 1.28 4.89L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.9C21.95 6.45 17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.15.83.84-3.07-.2-.32a8.2 8.2 0 0 1-1.26-4.33c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.53-3.7 8.2-8.21 8.2Zm4.51-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.47-.01a.9.9 0 0 0-.65.31c-.23.25-.86.84-.86 2.05s.88 2.38 1 2.54c.13.17 1.73 2.65 4.2 3.71.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.46-.6 1.66-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            WhatsApp
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="trust">
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+      <p>One-on-one home visits across Islamabad &amp; Rawalpindi</p>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+      <p>Every session personally led by Dr. Usman</p>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <p>Book in minutes, straight from WhatsApp</p>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section-pad" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What We Offer</span>
+      <h2 class="reveal">Recovery, built around <em class="serif-italic">your</em> home.</h2>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card reveal">
+        <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12 12 3l9 9"/><path d="M5 10v10h14V10"/></svg></div>
+        <h3>Home Visits</h3>
+        <p>We bring the clinic to your living room — no traffic, no waiting rooms, just focused, one-on-one care where you're most comfortable.</p>
+        <div class="shuffler" id="shuffler">
+          <div class="shuffler-item active">Back Pain</div>
+          <div class="shuffler-item">Neck &amp; Cervical</div>
+          <div class="shuffler-item">Knee &amp; Joint</div>
+          <div class="shuffler-item">Neuro &amp; Paediatric</div>
+        </div>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><path d="m16 8 2 2"/></svg></div>
+        <h3>Led by Dr. Usman</h3>
+        <p>Every plan is assessed and personally delivered by Dr. Usman — from spine and joint pain to sports injuries, neuro and paediatric care.</p>
+        <div class="typewriter-box"><p id="typewriter"></p></div>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3>Book on WhatsApp</h3>
+        <p>Tell us your pain point and share your location — we'll confirm a slot that works around your day, all over WhatsApp.</p>
+        <div class="scheduler">
+          <div class="sched-grid" id="schedGrid"></div>
+          <div class="sched-cursor" id="schedCursor"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section class="section-pad bg-alt" id="doctor">
+  <div class="wrap">
+    <div class="doctor-grid">
+      <div class="doctor-photo reveal">
+        <img src="https://fracktechnologies.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-15-at-4.51.09-PM.jpeg" alt="Dr. Usman, lead physiotherapist at Physiotherapy Islamabad">
+        <div class="badge">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          <div>
+            <div style="font-weight:700;color:var(--navy);font-size:.95rem;">Dr. Usman</div>
+            <div style="font-size:.78rem;color:var(--muted);">Lead Physiotherapist</div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor-copy">
+        <span class="eyebrow">Meet Your Physiotherapist</span>
+        <h2>Care that's personal, from the first visit to the last.</h2>
+        <p>Dr. Usman leads every session himself — from the initial assessment to hands-on treatment and home-exercise coaching. Nothing is handed off to a rotating roster of staff.</p>
+        <p>His approach blends orthopaedic rehabilitation, neurological care and paediatric physiotherapy, tailored to how you actually live and move at home.</p>
+        <ul class="doctor-points">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Full in-home assessment before any treatment begins</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Hands-on sessions, not just take-home exercise sheets</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ongoing WhatsApp support between visits</li>
+        </ul>
+        <a href="#booking" class="btn btn-dark" style="margin-top:2rem;">
+          <span class="slide"></span><span class="label">Book With Dr. Usman</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section-pad" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Care, In Your Home</span>
+      <h2 class="reveal">A look at real sessions.</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="https://fracktechnologies.com/wp-content/uploads/2026/07/dr.usman-assesing-cervical.png" alt="Dr. Usman assessing a cervical spine patient at home">
+        <div class="gallery-cap">Cervical Spine Assessment</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://fracktechnologies.com/wp-content/uploads/2026/07/usman-with-Cp-child.png" alt="Dr. Usman treating a paediatric neuro patient">
+        <div class="gallery-cap">Paediatric &amp; Neuro Care</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://fracktechnologies.com/wp-content/uploads/2026/07/Usman-performing-knee-isometrics.png" alt="Dr. Usman guiding knee isometric exercises">
+        <div class="gallery-cap">Knee Rehabilitation</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://fracktechnologies.com/wp-content/uploads/2026/07/usman-councelling.jpeg" alt="Dr. Usman counselling a patient on their recovery plan">
+        <div class="gallery-cap">Patient Counselling</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section-pad">
+  <div class="wrap">
+    <div class="philosophy">
+      <p class="line">Most physiotherapy focuses on: <em>fitting you into a 20-minute clinic slot.</em></p>
+      <p class="drama" id="philDrama">We focus on: <span class="accent">unhurried, one-to-one care</span>, in the room where you actually recover — home.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROTOCOL -->
+<section id="how-it-works">
+  <div class="wrap section-head" style="padding-top:5rem;">
+    <span class="eyebrow">How It Works</span>
+    <h2 class="reveal">Three steps to your first home visit.</h2>
+  </div>
+
+  <div class="protocol-step">
+    <div class="wrap">
+      <div class="protocol-inner" style="background:var(--bg-alt-2);border:1px solid var(--line);">
+        <div>
+          <span class="protocol-num">01 / 03</span>
+          <h3>Tell Us Where It Hurts</h3>
+          <p>Share your location, pain point and any notes on the booking form or straight over WhatsApp — takes less than a minute.</p>
+        </div>
+        <div class="protocol-visual">
+          <div class="motif-rotate"><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="protocol-step">
+    <div class="wrap">
+      <div class="protocol-inner" style="background:var(--bg-alt-2);border:1px solid var(--line);">
+        <div>
+          <span class="protocol-num">02 / 03</span>
+          <h3>We Come to You</h3>
+          <p>Dr. Usman arrives at your home for a full assessment and first treatment session — equipment included, nothing for you to arrange.</p>
+        </div>
+        <div class="protocol-visual">
+          <div class="dot-grid"><div class="laser"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="protocol-step">
+    <div class="wrap">
+      <div class="protocol-inner" style="background:var(--bg-alt-2);border:1px solid var(--line);">
+        <div>
+          <span class="protocol-num">03 / 03</span>
+          <h3>Track Your Recovery</h3>
+          <p>A tailored home-exercise plan with follow-up visits and WhatsApp check-ins, until you're moving freely again.</p>
+        </div>
+        <div class="protocol-visual">
+          <div class="waveform">
+            <span style="animation-delay:0s"></span><span style="animation-delay:.1s"></span><span style="animation-delay:.2s"></span>
+            <span style="animation-delay:.3s"></span><span style="animation-delay:.15s"></span><span style="animation-delay:.25s"></span>
+            <span style="animation-delay:.05s"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSIONS + CTA -->
+<section class="section-pad">
+  <div class="wrap">
+    <div class="inclusions">
+      <div>
+        <span class="eyebrow">What's Included</span>
+        <h2 style="font-size:clamp(1.7rem,3vw,2.2rem);color:var(--navy);margin-top:.8rem;letter-spacing:-.02em;">Every home visit includes</h2>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> A full physical assessment at your home</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> A hands-on treatment session with Dr. Usman</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> A personalised home-exercise plan</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> WhatsApp follow-up support between visits</li>
+        </ul>
+      </div>
+      <div class="inclusions-cta">
+        <h3>Ready to get moving?</h3>
+        <p>Tell us your pain point and we'll confirm your first home visit.</p>
+        <a href="#booking" class="btn btn-primary" style="width:100%;">
+          <span class="slide"></span><span class="label">Book Your First Visit</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section-pad bg-alt" id="booking">
+  <div class="wrap">
+    <div class="booking-wrap">
+      <div class="booking-info">
+        <span class="eyebrow">Book a Home Visit</span>
+        <h2>Let's plan your first session.</h2>
+        <p>Fill in a few details below — we'll confirm your visit over WhatsApp, usually within the hour.</p>
+
+        <div class="info-row">
+          <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.44 1.28 4.89L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.9C21.95 6.45 17.5 2 12.04 2Z"/></svg></div>
+          <div><div class="t">WhatsApp</div><div class="v">+92 301 5802621</div></div>
+        </div>
+        <div class="info-row">
+          <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></div>
+          <div><div class="t">Service Area</div><div class="v">Islamabad &amp; Rawalpindi</div></div>
+        </div>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="fphone">Phone / WhatsApp</label>
+            <input type="tel" id="fphone" placeholder="03XX XXXXXXX" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label for="flocation">Your Location</label>
+            <input type="text" id="flocation" placeholder="e.g. F-10, Islamabad" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label for="fpain">What's Your Pain Point?</label>
+            <select id="fpain" required>
+              <option value="" disabled selected>Select a condition</option>
+              <option>Back Pain</option>
+              <option>Neck / Cervical</option>
+              <option>Knee / Joint</option>
+              <option>Post-Surgery Rehab</option>
+              <option>Neurological / Paediatric</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label for="fnotes">Additional Notes</label>
+            <textarea id="fnotes" placeholder="Anything else that would help us prepare (optional)"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:.5rem;">
+          <span class="slide"></span><span class="label">Send via WhatsApp</span>
+        </button>
+        <p class="form-note">Submitting opens WhatsApp with your details pre-filled — nothing is sent until you press send there.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-pad" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2 class="reveal">Frequently asked.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Do you provide physiotherapy at home anywhere in Islamabad?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">Yes — we cover Islamabad and Rawalpindi. Share your area on the booking form and we'll confirm availability over WhatsApp.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need any special equipment at home?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">No. Dr. Usman brings all necessary assessment and treatment equipment. You just need a comfortable, well-lit space to work in.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What conditions do you treat?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">Back and neck pain, post-surgery rehabilitation, sports injuries, knee and joint issues, and neurological or paediatric conditions, including cerebral palsy.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I book a session?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">Fill in the booking form with your location and pain point, or message us directly on WhatsApp at +92 301 5802621.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Physiotherapy Islamabad</h3>
+        <p>Recovery, at home. Premium one-on-one physiotherapy led by Dr. Usman, delivered wherever you are.</p>
+        <div class="status-pill"><span class="status-dot"></span> Booking Slots Open</div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a class="link-lift" href="#services">Services</a>
+        <a class="link-lift" href="#doctor">Dr. Usman</a>
+        <a class="link-lift" href="#how-it-works">How It Works</a>
+        <a class="link-lift" href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a class="link-lift" href="https://wa.me/923015802621" target="_blank" rel="noopener">WhatsApp: +92 301 5802621</a>
+        <a class="link-lift" href="#booking">Book a Home Visit</a>
+        <span style="display:block;color:rgba(255,255,255,.75);font-size:.92rem;">Islamabad &amp; Rawalpindi</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Physiotherapy Islamabad. All rights reserved.</span>
+      <span>Home-service physiotherapy · Islamabad</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923015802621?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20home%20physiotherapy%20sessions." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.44 1.28 4.89L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.9C21.95 6.45 17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.15.83.84-3.07-.2-.32a8.2 8.2 0 0 1-1.26-4.33c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.53-3.7 8.2-8.21 8.2Zm4.51-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.47-.01a.9.9 0 0 0-.65.31c-.23.25-.86.84-.86 2.05s.88 2.38 1 2.54c.13.17 1.73 2.65 4.2 3.71.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.46-.6 1.66-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+</a>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+/* navbar scroll morph */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 80);
+});
+
+/* mobile menu (simple) */
+document.getElementById('hamburger').addEventListener('click', () => {
+  const links = document.querySelector('.nav-links');
+  links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  links.style.cssText += 'position:absolute;top:60px;left:0;right:0;background:#fff;flex-direction:column;padding:1.2rem;border-radius:1.2rem;box-shadow:0 20px 40px -20px rgba(15,42,67,.3);gap:1rem;';
+});
+
+/* hero entrance */
+gsap.context(() => {
+  gsap.from('[data-hero]', {
+    opacity: 0, y: 30, duration: 1, ease: 'power3.out', stagger: 0.08, delay: 0.2
+  });
+
+  /* generic reveal on scroll */
+  gsap.utils.toArray('.reveal').forEach((el) => {
+    gsap.to(el, {
+      opacity: 1, y: 0, duration: 0.9, ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 85%' }
+    });
+  });
+
+  gsap.utils.toArray('.feature-card').forEach((el, i) => {
+    gsap.from(el, {
+      opacity: 0, y: 30, duration: 0.8, ease: 'power3.out', delay: i * 0.15,
+      scrollTrigger: { trigger: el, start: 'top 85%' }
+    });
+  });
+
+  gsap.utils.toArray('.gallery-item').forEach((el, i) => {
+    gsap.from(el, {
+      opacity: 0, y: 40, duration: 0.9, ease: 'power3.out', delay: i * 0.12,
+      scrollTrigger: { trigger: el, start: 'top 90%' }
+    });
+  });
+
+  /* philosophy word reveal */
+  const drama = document.getElementById('philDrama');
+  const text = drama.innerHTML;
+  drama.innerHTML = text.split(' ').map(w => `<span class="word">${w}</span>`).join(' ');
+  gsap.to('#philDrama .word', {
+    opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', stagger: 0.05,
+    scrollTrigger: { trigger: drama, start: 'top 80%' }
+  });
+
+  /* protocol pin-stack (desktop only) */
+  if (window.matchMedia('(min-width: 981px)').matches) {
+    gsap.utils.toArray('.protocol-step').forEach((step) => {
+      ScrollTrigger.create({ trigger: step, start: 'top top', pin: true, pinSpacing: false });
+    });
+  }
+}, document.body);
+
+/* shuffler card 1 */
+(() => {
+  const items = document.querySelectorAll('#shuffler .shuffler-item');
+  let i = 0;
+  setInterval(() => {
+    items[i].classList.remove('active');
+    i = (i + 1) % items.length;
+    items[i].classList.add('active');
+  }, 2600);
+})();
+
+/* typewriter card 2 */
+(() => {
+  const phrases = ['Assessing posture...', 'Building recovery plan...', 'Tracking progress...', 'Confirming next visit...'];
+  const el = document.getElementById('typewriter');
+  let p = 0, c = 0, deleting = false;
+  function tick() {
+    const current = phrases[p];
+    el.innerHTML = current.slice(0, c) + '<span class="cursor"></span>';
+    if (!deleting && c < current.length) { c++; setTimeout(tick, 45); }
+    else if (!deleting && c === current.length) { deleting = true; setTimeout(tick, 1400); }
+    else if (deleting && c > 0) { c--; setTimeout(tick, 25); }
+    else { deleting = false; p = (p + 1) % phrases.length; setTimeout(tick, 300); }
+  }
+  tick();
+})();
+
+/* scheduler card 3 */
+(() => {
+  const grid = document.getElementById('schedGrid');
+  const cursor = document.getElementById('schedCursor');
+  const cells = [];
+  for (let r = 0; r < 3; r++) {
+    for (let c = 0; c < 7; c++) {
+      const cell = document.createElement('div');
+      cell.className = 'sched-cell';
+      grid.appendChild(cell);
+      cells.push(cell);
+    }
+  }
+  const path = [9, 16, 4, 20, 11];
+  let step = 0;
+  function moveCursor() {
+    cells.forEach(c => c.classList.remove('hit'));
+    const idx = path[step % path.length];
+    const cell = cells[idx];
+    const gridRect = grid.getBoundingClientRect();
+    const cellRect = cell.getBoundingClientRect();
+    cursor.style.left = (cellRect.left - gridRect.left + cellRect.width / 2 - 7) + 'px';
+    cursor.style.top = (cellRect.top - gridRect.top + cellRect.height / 2 - 7) + 'px';
+    cell.classList.add('hit');
+    step++;
+  }
+  moveCursor();
+  setInterval(moveCursor, 1600);
+})();
+
+/* faq accordion */
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+/* booking form -> whatsapp */
+document.getElementById('bookingForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  const location = document.getElementById('flocation').value.trim();
+  const pain = document.getElementById('fpain').value;
+  const notes = document.getElementById('fnotes').value.trim();
+
+  const msg = `Hi Physiotherapy Islamabad, I'd like to book a home visit.\nName: ${name}\nPhone: ${phone}\nLocation: ${location}\nPain Point: ${pain}\nNotes: ${notes || '-'}`;
+  window.open(`https://wa.me/923015802621?text=${encodeURIComponent(msg)}`, '_blank');
+});
+</script>
+
+</body>
+</html>
